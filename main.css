@@ -1,0 +1,184 @@
+.color-block {
+    position: absolute;
+    left: 300px;
+    top: -30px;
+    display: none;
+    width: 300px;
+    height: 300px;
+    flex-wrap: wrap;
+}
+
+.bg-block {
+    position: absolute;
+    left: 300px;
+    top: -30px;
+    display: none;
+    width: 300px;
+    height: 300px;
+    flex-wrap: wrap;
+}
+
+.mini-block-color-1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.mini-block-color-2 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.mini-block-color-3 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+.mini-block-color-4 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(63, 63, 68);
+}
+
+.mini-block-color-5 {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+
+.mini-block-color-6 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 0, 128);
+}
+
+.mini-block-color-7 {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
+
+.mini-block-color-8 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(103, 103, 207);
+}
+
+.mini-block-color-9 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(92, 92, 223);
+}
+
+.table-box {
+    display: none;
+    width: 700px;
+    height: 500px;
+    margin: 0px auto;
+    background-color: gray;
+    flex-direction: column;
+}
+
+.hide-table {
+    display: none;
+}
+
+.hide-list {
+    display: none;
+}
+
+table,
+td {
+    border: 1px solid black;
+}
+
+.edit {
+    width: 70px;
+    height: 30px;
+    border-radius: 7px;
+    background-color: yellow;
+    outline: none;
+    border: none;
+}
+
+.edit:hover {
+    background-color: rgb(192, 192, 16);
+}
+
+.style {
+    width: 70px;
+    height: 30px;
+    border-radius: 7px;
+    background-color: darkturquoise;
+    border: none;
+    outline: none;
+}
+
+.style:hover {
+    background-color: rgb(16, 126, 128);
+}
+
+.edit:focus {
+    outline: none;
+    box-shadow: 0 0 5px 3px rgb(158, 135, 7);
+}
+
+.style:focus {
+    outline: none;
+    box-shadow: 0 0 5px 3px rgb(10, 114, 116);
+}
+
+.colors-body,
+.bg-colors-body {
+    background-color: dimgray;
+    width: 100px;
+    height: 40px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+}
+.colors-body:hover{
+    background-color: rgb(56, 56, 56);
+}
+.bg-colors-body:hover{
+    background-color: rgb(56, 56, 56);
+}
+.save,
+.edited{
+    width: 70px;
+    height: 30px;
+    background-color: red;
+    border: none;
+    outline: none;
+    color: white;
+}
+.edited{
+    background-color: green; 
+    margin-left: 10px;
+}
+
+.save:hover{
+    background-color: rgb(167, 10, 10);
+}
+.edited:hover{
+    background-color: rgb(4, 80, 4);
+}
+.button-table,
+.button-list{
+    border: none;
+    outline: none;
+    color: white;
+    width: 100px;
+    height: 40px;
+    background-color: green;
+    margin: 20px 20px;
+    border-radius: 8px;
+}
+.button-list:hover{
+    background-color: rgb(1, 61, 1);
+}
+.button-table:hover{
+    background-color: rgb(1, 61, 1);
+}

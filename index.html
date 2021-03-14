@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .up-box {
+            width: 600px;
+            min-height: 350px;
+            margin: 0px auto;
+            background-color: gray;
+            border-radius: 15px;
+            padding: 30px 30px;
+            box-sizing: border-box;
+        }
+
+        .down-box {
+            width: 600px;
+            height: 300px;
+            margin: 0px auto;
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+            border-radius: 15px;
+        }
+
+        .two-buttons {
+            display: flex;
+            justify-content: center;
+        }
+
+        .textarea {
+            width: 400px;
+            height: 150px;
+            margin: 0px auto;
+        }
+
+        .save {
+            display: none;
+            border-radius: 7px;
+        }
+
+        .edited {
+            display: none;
+            border-radius: 7px;
+        }
+
+        .colors-body {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="up-box">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+        </div>
+        <div style="margin-top: 10px; margin-bottom: 10px;" class="two-buttons">
+            <input style="margin-right: 5px;" type="button" value="edit" class="edit">
+            <input style="margin-left: 5px;" type="button" value="style" class="style">
+        </div>
+        <div class="down-box">
+            <div class="hide" style="display: block;"><textarea style="display: none;" class="textarea"></textarea>
+                <div style="margin-top: 20px;" class="two-buttons">
+                    <input type="button" class="save" value="save">
+                    <input type="button" class="edited" value="add">
+                </div>
+            </div>
+            <div class="editfont" style="display: none ; position: relative; padding-left: 20px;">
+                <form class="form-size">
+                    <p>Font size</p>
+                    <input type="radio" value="12" name="radiobutton">12px
+                    <input type="radio" value="14" name="radiobutton">14px
+                    <input type="radio" value="16" name="radiobutton">16px
+                    <input type="radio" value="18" name="radiobutton">18px
+                    <input type="radio" value="20" name="radiobutton">20px
+                </form>
+                <form>
+                    <p>Font family</p>
+                    <select class="form-family">
+                        <option>Choose option</option>
+                        <option>cursive</option>
+                        <option>fantasy</option>
+                        <option>monospace</option>
+                        <option>sens-serif</option>
+                    </select>
+                </form>
+                <form>
+                    <button class="colors-body">Color of Text</button>
+                    <button class="bg-colors-body">Bg Color</button>
+                </form>
+                <div class="color-block">
+                    <div class="mini-block-color-1"></div>
+                    <div class="mini-block-color-2"></div>
+                    <div class="mini-block-color-3"></div>
+                    <div class="mini-block-color-4"></div>
+                    <div class="mini-block-color-5"></div>
+                    <div class="mini-block-color-6"></div>
+                    <div class="mini-block-color-7"></div>
+                    <div class="mini-block-color-8"></div>
+                    <div class="mini-block-color-9"></div>
+                </div>
+                <div class="bg-block">
+                    <div class="mini-block-color-1"></div>
+                    <div class="mini-block-color-2"></div>
+                    <div class="mini-block-color-3"></div>
+                    <div class="mini-block-color-4"></div>
+                    <div class="mini-block-color-5"></div>
+                    <div class="mini-block-color-6"></div>
+                    <div class="mini-block-color-7"></div>
+                    <div class="mini-block-color-8"></div>
+                    <div class="mini-block-color-9"></div>
+                </div>
+                <form class="form-checked" style="margin-top: 20px;">
+                    <input class="bolded" type="checkbox" value="bold"><label>Bold</label>
+                    <input class="cursive" type="checkbox" value="cursive"><label>Cursive</label>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="table-box">
+        <h2>Choose what you want?</h2>
+        <form class="form-tables">
+            <input type="radio" name="check"><label>table</label>
+            <input type="radio" name="check"><label>list</label>
+        </form>
+        <div class="hide-table">
+            <form>
+                <p><label>Count TR:</label><input class="count_tr" type="text"></p>
+                <p><label>Count TD:</label><input class="count_td" type="text"></p>
+            </form>
+            <h3>Add style for your table</h3>
+            <form>
+                <p><label>Width TD:</label><input class="width_td" type="text"></p>
+                <p><label>Hight TD:</label><input class="hight_td" type="text"></p>
+                <label>Width of border:</label><input class="width_border" type="text">
+                <label>type of boreder:</label><select class="type_border">
+                    <option>solid</option>
+                    <option>dotted</option>
+                    <option>outset</option>
+                </select>
+                <label>Color of border</label><select class="color_border">
+                    <option>red</option>
+                    <option>blue</option>
+                    <option>orange</option>
+                    <option>green</option>
+                </select>
+            </form>
+            <form><input class="button-table" type="button" value="Crate table"></form>
+        </div>
+        <div class="hide-list">
+            <p><label>Count li:</label><input class="count_li" type="text"></p>
+            <label>Tipe of marks:</label><select class="tipe_mark">
+                <option>circle</option>
+                <option>disk</option>
+                <option>square</option>
+            </select>
+            <form><input class="button-list" type="button" value="Crate list"></form>
+        </div>
+    </div>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
